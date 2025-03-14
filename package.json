@@ -1,0 +1,41 @@
+{
+  "name": "pumpfun-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahgsolomon/pumpfun-mcp-server.git"
+  },
+  "bin": {
+    "pumpfun": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/noahgsolomon/pumpfun-mcp-server/issues"
+  },
+  "homepage": "https://github.com/noahgsolomon/pumpfun-mcp-server#readme",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "@solana/spl-token": "^0.4.1",
+    "@solana/web3.js": "^1.91.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "pumpdotfun-sdk": "github:rckprtr/pumpdotfun-sdk",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
