@@ -2,6 +2,8 @@
 
 A Model Context Protocol (MCP) server for interacting with the [Pump.fun](https://pump.fun) platform on Solana. This server enables AI assistants to create, buy, and sell tokens on the Pump.fun platform.
 
+[![smithery badge](https://smithery.ai/badge/@noahgsolomon/pumpfun-mcp-server)](https://smithery.ai/server/@noahgsolomon/pumpfun-mcp-server)
+
 ![Pump.fun MCP Demo](https://pump.fun/logo.png)
 
 ## Usage
@@ -28,6 +30,15 @@ Replace `https://your-helius-rpc-url.com` with your [Helius RPC URL](https://dev
 
 ## Installation
 
+### Installing via Smithery
+
+To install pumpfun-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@noahgsolomon/pumpfun-mcp-server):
+
+```bash
+npx -y @smithery/cli install @noahgsolomon/pumpfun-mcp-server --client claude
+```
+
+### Manual Installation
 1. Clone this repository:
 
    ```
