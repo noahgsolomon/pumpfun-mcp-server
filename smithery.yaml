@@ -1,0 +1,32 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - heliusRpcUrl
+    properties:
+      heliusRpcUrl:
+        type: string
+        description: Helius RPC URL for Solana network connection
+      privateKey:
+        type: string
+        description: "Optional: Base58 encoded private key for using an existing Solana
+          account"
+    default: {}
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['build/index.js'],
+      env: {
+        HELIUS_RPC_URL: config.heliusRpcUrl,
+        ...(config.privateKey ? { PRIVATE_KEY: config.privateKey } : {})
+      }
+    })
+  exampleConfig:
+    heliusRpcUrl: https://example-helius-rpc-url.com
+    privateKey: 3PZ6fGv2kFbD...
