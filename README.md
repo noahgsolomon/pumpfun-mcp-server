@@ -6,6 +6,8 @@ A Model Context Protocol (MCP) server for interacting with the [Pump.fun](https:
 
 ## Usage
 
+https://github.com/user-attachments/assets/0b0f1f6f-6ea6-4ca8-92a8-b4cc895814e4
+
 To use this server with Claude or other MCP-compatible AI assistants, add the following configuration to your MCP client:
 
 If you're on MacOS and want to run this in Claude Desktop, in your ~/Library/Application \Support/Claude/claude_desktop_config.json file, write the following:
