@@ -2,7 +2,7 @@
 
 A Model Context Protocol (MCP) server for interacting with the [Pump.fun](https://pump.fun) platform on Solana. This server enables AI assistants to create, buy, and sell tokens on the Pump.fun platform.
 
-![Pump.fun MCP Demo](https://pump.fun/logo.png)
+<img src="https://pump.fun/logo.png" width="250" height="250" alt="Pump.fun MCP Demo">
 
 ## Usage
 
